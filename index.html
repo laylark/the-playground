@@ -1,38 +1,49 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-                background-color: rgb(37, 79, 107);
-            }
-            .slider {
-                margin: 3em;
-            }
-            .slider .slick-slide {
-                height: auto;
-                text-align: center;
-            }
-        </style>
+<head>
         <title>Playground</title>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimal-ui">
+        <link rel="stylesheet" href="app.css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimal-ui" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <h2 style="text-align:center;color:white;">
-            Welcome to the <i>Playground</i>.
-        </h2>
-        <div>
-            <p style="text-align:center;">
-                <img 
-                    src="/images/eric-tompkins.jpg" 
-                    alt="colorful hopscotch" 
-                    width="500px" 
-                    height="600px"
-                    style="max-width: 100%; height: auto;"
-                />
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav">
+                <li class="nav"><a class="nav active" href=default.asp>Home</a></li>
+                <li class="nav"><a class="nav" href=aplace.asp>A Place</a></li>
+                <li class="nav"><a class="nav" href=anotherplace.asp>Another Place</a></li>
+                <li class="nav"><a class="nav" href="#" onclick="alert('Have a great day!')">See Ya</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <header class="intro">
+            <h2 class="title">
+                Welcome to the <i>Playground</i>.
+            </h2>
+            <p class="section">
+                Here you will have the opportunity to practice what you've learned.
+                Keep up the strong work! You are becoming a better version of you
+                every single day.
             </p>
-        </div>
+        </header>
+        <section class="images">
+            <img 
+                src="/images/mohammad-rahmani.jpg" 
+                alt="colorful hopscotch" 
+                width="500px" 
+                style="max-width: 100%; height: auto;"
+            />
+            <img
+                src="/images/alexander.jpg"
+                alt="tech helix"
+                width="500px"
+                style="max-width: 100%; height: auto;"
+            />
+        </section>
         <div class="slider">
             <div>
                 <img 
@@ -80,13 +91,20 @@
                 />
             </div>    
         </div>
-        <svg width="1000" height="250">
-            <rect width="200" height="150" fill="purple">
-                <animate attributeName="x" to="800" dur="2s" fill="freeze" repeatCount="3" />
-            </rect>
-        </svg>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="/app.js"></script>
-    </body>
+        <div>
+            <svg width="1000" height="250">
+                <rect width="200" height="150" fill="purple">
+                    <animate attributeName="x" to="800" dur="2s" fill="freeze" repeatCount="3" />
+                </rect>
+            </svg>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy;2022 Layla Krauss. All Rights Reserved.
+        </p>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/app.js"></script>
+</body>
 </html>
